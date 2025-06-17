@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihajlo Pupin</title>
+    <link rel="stylesheet" href="Style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .gallery div {
+            flex: 1 1 calc(33% - 20px);
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const bioSection = document.getElementById('bio');
+        setTimeout(() => {
+            bioSection.classList.add('visible');
+        }, 300); 
+    });
+</script>
+    <header>
+        <h1>Mihajlo Pupin</h1>
+    </header>
+  <!-- Biografijа -->
+    <section class="biografija">
+      <section class="biografija" id="bio">
+        <h2>Biografija</h2>
+        <p>
+           Mihajlo Idvorski Pupin rođen je 9. oktobra 1854. godine, po gregorijanskom kalendaru, ili 27. septembra 1854. godine po julijanskom kalendaru, u selu Idvor (danas u opštini Kovačica) u Banatu (tada Austrijsko carstvo, danas Srbija). Otac mu se zvao Konstantin, a majka Olimpijada.
+        </p>
+        <p>
+            Pupin se 1888. godine oženio Amerikankom Sarom Katarinom Džekson iz Njujorka sa kojom je imao ćerku Varvaru.
+        </p>
+        <p>
+           Celoga života pamtio je reči svoje majke koje navodi u svom autobiografskom delu:
+
+	<i>"Dete moje, ako želiš da pođeš u svet, o kome si toliko slušao na našim poselima, moraš imati još jedan par očiju — oči za čitanje i pisanje. U svetu ima mnogo čega o čemu ne možeš saznati ako ne umeš da čitaš i pišeš. Znanje, to su zlatne lestvice preko kojih se ide u nebesa; znanje je svetlost koja osvetljava naš put kroz život i vodi nas u život budućnosti pun večne slave."</i>
+        </p>
+    </section>
+    <main>
+        <main>
+    <!-- Три слике са описом -->
+    <div class="gallery">
+        <div>
+            <img src="pisac.jpg" alt="Mihajlo Pupin">
+            <p>Portret Mihajla Pupina</p>
+            <p> <i>Za mladog čoveka uopšte nije nesreća biti bez novaca, ako se odlučio da sam sebi krči put samostalnom životu, pod uslovom da u sebi ima dovoljno snage da savlada sve teškoće sa kojima će se sukobiti.</i> text.</p>
+<p> <em>Sve stvari su u međusobnom kontaktu, svaka zvezda oseća, da se tako izrazimo, bilo kakve druge zvezde i svega živoga, čak i najmanjeg crvića na Zemlji.</em> text.</p>
+            
+
+</p>
+        </div>
+        <div>
+            <img src="slika3.jpg" alt="slika1">
+            <p> <em>Mihajlo Pupin</em>, </p>
+        </div>
+        <div>
+            <img src="download.jpg" alt="univerzitet">
+            <p>Univerzitet Kolumbija gde je isao Mihajlo Pupin</p>
+        </div>
+    </div>
+
+
+ 
+<button id="openModalBtn">Prikazi vise o Mihajlu Pupinu</button>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>O Mihajlu Pupinu</h2>
+        <p>
+            Po odlasku u Ameriku, dodao je prezime „Idvorski“, čime je naglasio svoje poreklo. Imao je četvoricu braće i pet sestara, od toga su ostale tri sestre: Persida, Ljubica i Hristina.
+        </p>
+    </div>
+</div>
+     
+<button id="openWorksModalBtn">Patenti Pupina</button>
+
+
+<div id="worksModal" class="modal">
+    <div class="modal-content">
+        <span class="close-works">&times;</span>
+        <h2>Izabrani patenti Mihajla Pupina </h2>
+        <ul class="works-list">
+            <li><strong>Aparat za telegrafske i telefonske prenose</strong></li>
+            <li><strong>Transformator za telegrafske, telefonske ili druge električne sisteme</strong></li>
+            <li><strong>Tehnika razvođenja električne energije pomoću naizmeničnih struja</strong></li>
+            <li><strong>Električni prenos pomoću rezonantnih strujnih kola</strong></li>
+            <li><strong>Metod smanjenja slabljenja električnih talasa i aparati za to</strong></li>
+            <li><strong>Višestruka telegrafija</strong></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("modal");
+    const openBtn = document.getElementById("openModalBtn");
+    const closeBtn = document.querySelector(".close");
+
+
+    openBtn.onclick = () => {
+        modal.style.display = "block";
+    };
+
+    
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+   
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+    <footer>
+        &copy; 2025 Milan Stankovic
+		
+    </footer>
+          <script>
+    const header = document.querySelector("header");
+
+    
+    ;
+</script>
+      <script>
+    const worksModal = document.getElementById("worksModal");
+    const openWorksBtn = document.getElementById("openWorksModalBtn");
+    const closeWorksBtn = document.querySelector(".close-works");
+
+
+    openWorksBtn.onclick = () => {
+        worksModal.style.display = "block";
+    };
+
+
+    closeWorksBtn.onclick = () => {
+        worksModal.style.display = "none";
+    };
+
+   
+    window.onclick = (event) => {
+        if (event.target === worksModal) {
+            worksModal.style.display = "none";
+        }
+    };
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
